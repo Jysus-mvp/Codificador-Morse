@@ -1,0 +1,121 @@
+* {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: rgb(25, 23, 21);
+}
+
+/* container */
+
+.traduccion {
+
+    text-align: center;
+    max-width: 65%; /* Limita el ancho del contenedor al 90% del tamaño de la pantalla */
+   
+}
+#resultado {
+    font-weight: bolder;
+    color: white;
+    border-radius: 5px;
+}
+#mensaje {
+    font-weight: bolder;
+    color: black;
+    border-radius: 5px;
+    background-color: wheat;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+#instrucciones {
+    flex:1 ;
+    position: absolute;
+    top: 10px; 
+    left: 90%;
+}
+#compartir {
+    flex: 1;
+    position: absolute;
+    top: 35px; 
+    left: 90%;
+}
+
+/* Estilos para todos los botones */
+button {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    background-color:rgb(158, 112, 27); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor apuntador */
+    font-size: 16px; /* Tamaño de fuente */ 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    
+}
+
+/* container2 */
+
+.container2 {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+.container2 h1 {
+    padding-top: 20px;
+}
+.container2 ul {
+    margin-top: 4%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 7%;
+}
+#salir {
+    position: absolute;
+    top: 0px; /* Distancia desde la parte superior */
+    right: 0px; /* Distancia desde la izquierda */
+    border-radius: 6px;
+    background-color:rgb(25, 23, 21);
+    
+}
+
+/* Cambiar estilos al pasar el mouse sobre el botón */
+button:hover {
+    opacity: 0.6; /* Cambiar opacidad al pasar el mouse */
+}
+@media (max-width:768px) {
+    .container2 {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:307px) {
+    * {
+        text-align: center;
+    }
+    .botones {
+       align-items: center;
+       text-align: center;
+
+    }
+    #copiar {
+        margin-top: 6px;
+    }
+}
+
